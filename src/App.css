@@ -1,0 +1,181 @@
+.App {
+  text-align: center;
+}
+
+#root{
+  padding: 0;
+  margin: 0;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logoStyle {
+  color: rgba(255, 255, 255, 0.70);
+  font-family: 'Anton', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.featureStyle {
+  color: var(--cultured-grey, #F7F9F9);
+  font-family: 'Work Sans', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+  /* 140% */
+}
+
+.onClickBg {
+  background-color: #F30050;
+  ;
+}
+
+.row>* {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+.button {
+  width: 156px;
+  height: 52px;
+  border-radius: 20px !important;
+  background: linear-gradient(131deg, #7C0F35 0%, #581266 100%);
+}
+
+.btn-content {
+  color: #fff;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.searchBar {
+  width: 470px;
+  height: 50px;
+  padding-left: 20px;
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #FFF;
+  background: linear-gradient(132deg, rgba(124, 15, 53, 0.20) 0%, rgba(88, 18, 102, 0.20) 100%);
+
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.cardStyle {
+  color: #fff;
+  width: 279px !important;
+  height: 220px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #390554;
+}
+
+.cardButton {
+  width: 56px;
+  height: 56px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #960252;
+  border: 0px;
+}
+
+.cardContent {
+  color: #F5F5F5;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.content-container {
+  min-height: calc(100vh - 68px);
+}
+.footer--pin {
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.float-social{
+  /* float:right; */
+  position: sticky;
+  top: 90%;
+}
+
+
+@media (max-width: 643px) {
+  .searchBar {
+    width: auto;
+    /* padding-left: 20px; */
+    flex-shrink: 0;
+    border-radius: 20px;
+    border: 1px solid #FFF;
+    background: linear-gradient(132deg, rgba(124, 15, 53, 0.20) 0%, rgba(88, 18, 102, 0.20) 100%);
+  }
+  .button {
+    width: auto;
+    height: auto;
+    border-radius: 20px !important;
+    background: linear-gradient(131deg, #7C0F35 0%, #581266 100%);
+  }
+  .btn-content {
+    color: #fff;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+}
